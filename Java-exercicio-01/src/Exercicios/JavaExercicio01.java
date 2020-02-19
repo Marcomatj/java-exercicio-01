@@ -1,15 +1,12 @@
 package Exercicios;
 
 import java.util.Scanner;
-
-package java.exercicio.pkg01;
-
 public class JavaExercicio01 {
 
     public static void main(String[] args) {
 
-        double valores[
-        4];
+        double[] valores;
+        valores = null;
         double maior = 0;
         double menor = 0;
         int cont = 0;
@@ -22,15 +19,15 @@ public class JavaExercicio01 {
             if (maior < valores[cont]) {
                 maior = valores[cont];
             } else {
-                if (menor > valores) {
+                if (menor > valores[cont]) {
                     menor = valores[cont];
                 }
             }
             cont++;
         }
         
-        System.out.println("Maior valor: %d", maior);
-        System.out.println("Menor valor: %d", menor);
+        System.out.println("Maior valor: "+ maior);
+        System.out.println("Menor valor: "+ menor);
         
         if(maior > 50){
             System.out.println("Valor muito alto!");
